@@ -4,7 +4,9 @@ import { OpaqueColorValue, StyleProp, ViewProps, ViewStyle } from "react-native"
 
 const MAPPING = {
     "house.fill":'home',
-    "book.fill":'book'
+    "book.fill":'book',
+    "delete.backward.fill":'delete',
+    "pencil.and.list.clipboard":"edit"
 } as Partial<Record<import('expo-symbols').SymbolViewProps['name'],React.ComponentProps<typeof MaterialIcons>['name']>>
 
 export type IconSymbolName = keyof typeof MAPPING
